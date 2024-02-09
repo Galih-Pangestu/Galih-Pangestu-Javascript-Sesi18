@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #595959;
+}
+.form-content {
+  display: flex;
+}
+.form-content input {
+  flex: 1;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #858585;
+}
+.form-content button {
+  background-color: #000000;
+  border: 0;
+}
+.form-content button:hover {
+  background-color: #858585;
+}
+.tanggal-waktu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem 1rem;
+  font-size: 16px;
+  color: #ffffff;
+}
+#tgl {
+  flex: 1;
+}
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid white;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border: none;
+}
+button:hover {
+  background-color: #858585;
+  color: white;
+}
+input {
+  padding: 0.4rem 0.5rem;
+}
+.hide {
+  display: none;
+}
+.tugas-container {
+  background-color: #b0b0b0;
+  border-radius: 15px;
+  width: 450px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+
+#tugas-form,
+#ubah-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+#tugas-form > p,
+#ubah-form > p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form-content > input {
+  margin-right: 0.1rem;
+}
+#batal-ubah-btn {
+  margin-top: 1rem;
+}
+.tuga {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+.tuga h4 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.tuga button {
+  margin-left: 0.2rem;
+  border-radius: 4px;
+  border: none;
+}
+.done {
+  background-color: green;
+}
+.done h4 {
+  color: white;
+  text-decoration: line-through;
+  font-style: italic;
+}
+.tuga button:hover,
+.done button {
+  background-color: #395169;
+  color: white;
+}
+.done > button:hover {
+  background-color: #ecf0f1;
+  color: #102f5e;
+}
+#daftar-tugas {
+  max-height: 220px;
+  overflow: auto;
+}

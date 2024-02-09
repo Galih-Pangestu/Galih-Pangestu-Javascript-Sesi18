@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="waktu()">
+    <div class="tugas-container">
+      <!-- Tanggal dan Waktu -->
+      <div class="tanggal-waktu">
+        <p id="tgl"></p>
+        <p id="w"></p>
+      </div>
+
+      <!-- Masukan Tugas -->
+      <form action="" id="tugas-form">
+        <p>Tambahkan Tugas disini</p>
+        <div class="form-content">
+          <input
+            type="text"
+            id="tugas-input"
+            placeholder="Ketik tugas disini"
+          />
+          <button type="submit">Tambah</button>
+        </div>
+      </form>
+
+      <!-- Mengubah Tugas -->
+      <form action="" id="ubah-form" class="hide">
+        <p>Mengubah Tugas disini</p>
+        <div class="form-content">
+          <input type="text" id="ubah-input" placeholder="Ketik tugas disini" />
+          <button type="submit">Simpan</button>
+        </div>
+
+        <button type="submit" id="batal-ubah-btn">Batal</button>
+      </form>
+
+      <!-- Daftar Tugas -->
+      <div class="daftar-tugas" id="daftar-tugas">
+        <div class="tuga">
+          <h4>Contoh daftar tugas</h4>
+          <button class="selesai-tugas">Selesai</button>
+          <button class="ubah-tugas">Ubah</button>
+          <button class="hapus-tugas">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>
